@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="component.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <title>Document</title>
+</head>
+<body class="homepage-background">
+  <header>
+    <img src="PHOTOS/picto/Logo.png" alt="LogoMeteo">
+  </header>
+  <div class="container">
+    <div class="meteo-info">
+      <div class="temp h1" id="temperature">
+         <h1></h1>
+      </div>
+      <div class="weather-text">
+        <img src="PHOTOS/picto/wind.png" alt="wind">
+        <h2 class="wind" id="wind"></h2>
+      </div>
+      <div class="weather-text">
+        <img src="PHOTOS/picto/rain.png" alt="rain">
+        <h2 class="precipitation" id="precipitation"></h2>
+      </div>
+      <div class="weather-text">
+        <img src="PHOTOS/picto/humidity.png" alt="">
+        <h2 class="humidity" id="humidity"></h2>
+      </div>
+    </div>
+    <div class="map-and-search">
+      <div class="search-bar">
+        <label for="TownInput"></label>
+        <input type="text" id="TownInput" placeholder="Search a city">
+        <ul id="city-suggestions"></ul>
+        <button onclick="searchTown()">Search</button>
+        <div id="resultTown"></div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </div>
+  <footer>
+    <div class="advice">
+      <div class="cloud-text">
+        <h4>@ Léa Besse | 2024 Tous droits réservés</h4>
+      </div>
+      <div class="image-cloud"></div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+  <script src="searchBar.js"></script>
+</body>
+</html>

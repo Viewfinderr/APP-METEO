@@ -1,0 +1,184 @@
+.homepage-background {
+  background-color: #9FE1E7;
+}
+
+.container {
+  margin-left: 108px;
+  margin-right: 108px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+SEARCH BAR
+*/
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  color: white;
+}
+
+#TownInput {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #6d8775;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #78c5cd;
+}
+
+/*
+METEO INFO
+*/
+.meteo-info {
+  padding: 8px;
+
+}
+
+.temp {
+  font-family: Machina;
+  font-size: 140px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.weather-text h2 {
+  font-family: Machina;
+  font-size: 36px;
+  color: white;
+}
+
+.current-location {
+
+}
+
+.location-text {
+  display: flex;
+  align-items: center;
+  margin-top: -44px;
+
+}
+
+.location-text img {
+  height: max-content;
+  margin-right: 22px;
+  }
+
+.weather-text{
+  display: flex;
+  align-items: center;
+
+}
+
+.weather-text img {
+  height: max-content;
+  margin-right: 22px;
+  }
+/*
+NUAGE CONSEIL
+*/
+.advice {
+
+}
+.image-cloud {
+  background-image: url(PHOTOS/white-cloud-clipart-design-illustration-free-png.webp);
+  width: 98.5%;
+  height: 21%;
+  position: absolute;
+  left: -64px;
+  background-size: cover;
+  /* size: 88px; */
+  background-size: 664px;
+}
+
+.cloud-text {
+  position: absolute;
+  bottom: -4px;
+  left: 78px;
+  z-index: 999;
+}
+/*
+MAP
+*/
+.map-and-search {
+
+}
+
+.map {
+  background-image: url(PHOTOS/map-weather-03-02-2024-16h.jpg);
+  width: 122%;
+  height: 82%;
+  margin-top: 16px;
+
+}
+
+#map {
+  margin-top: 22px;
+  width: 600px;
+  height: 400px;
+}
+
+
+/*
+HEADER
+*/
+
+header {
+  margin-left: 38px;
+  margin-right: 38px;
+  margin-top: 28px;
+}
+
+/*
+FOOTER
+*/
+
+/*
+TEXT
+*/
+h1 {
+  font-family: Machina;
+  font-size: 140px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-family: Machina;
+  font-size: 36px;
+  color: white;
+
+}
+
+h3 {
+  font-family: Sanz;
+  color: white;
+  font-size: 32 px;
+
+}
+
+h4 {
+  font-family: Sanz;
+  color: #78c5cd;
+  font-size: 32 px;
+}
+
+p {
+  font-family: Sanz;
+}
